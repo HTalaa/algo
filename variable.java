@@ -36,6 +36,6 @@ public  class variable {
         char h='a';
         char p='a';
         char y='a';
-
+        System.out.println();
     }
 }
