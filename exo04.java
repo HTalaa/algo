@@ -8,8 +8,9 @@ public class exo04 {
 
         System.out.printf("a= %d b= %d \n",a,b);
 
-        a=a+b;
-        a=b;
+        b=a+b;
+        a=b-a;
+        b=b-a;
         System.out.printf("a= %d b= %d",a,b);
     }
 }
