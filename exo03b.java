@@ -17,5 +17,8 @@ public class exo03b {
         f = (e - 0.5) * a;
         //f=20.0
         System.out.printf("a= %d\n b= %d\n c= %d\n d= %d\n e= %s \n f=%s",a,b,c,d,e,f);
+
+
+        //////
     }
 }
