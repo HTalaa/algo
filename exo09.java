@@ -29,6 +29,9 @@ public class exo09 {
                 else
                     System.out.println("voici votre eau");
                 break;
+            default:
+                System.out.println("Il  reste  " + coca + " coca et " + eau + " eau dans le distributeur");
+                break;
         }
 
 
