@@ -15,7 +15,7 @@ public class exo09 {
 
                 if(coca==0) {
                     System.out.println("Il n'y a plus de coca");
-                    System.out.println("Il ne reste que "+coca+" coca et "+eau+" eau dans le distributeur");
+                    System.out.println("Il  reste  "+coca+" coca et "+eau+" eau dans le distributeur");
                 }
                 else
                     System.out.println("voici votre coca");
@@ -24,7 +24,7 @@ public class exo09 {
             case 2:
                 if(eau==0) {
                     System.out.println("Il n'y a plus d'eau");
-                    System.out.println("Il ne reste que " + coca + " coca et " + eau + " eau dans le distributeur");
+                    System.out.println("Il  reste  " + coca + " coca et " + eau + " eau dans le distributeur");
                 }
                 else
                     System.out.println("voici votre eau");
