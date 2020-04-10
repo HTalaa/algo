@@ -7,7 +7,7 @@ public class exo09 {
         Scanner sc =new Scanner(System.in);
         int coca=3,eau=0;
 
-        System.out.println("Il  reste  "+coca+" coca et "+eau+" eau dans le distributeur");
+        System.out.println("StockCoca=  "+coca+" StockEau =  "+eau);
         System.out.println("Choisessez une boisson : tapez :\n 1 : coca \n 2 : eau");
         int choix=sc.nextInt();
         switch (choix)
@@ -31,7 +31,7 @@ public class exo09 {
                     System.out.println("voici votre eau");
                 break;
             default:
-                   System.out.println("Il  reste  " + coca + " coca et " + eau + " eau dans le distributeur");
+                   System.out.println("votre choix n'exist pas");
                 break;
         }
 
