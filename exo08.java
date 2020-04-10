@@ -5,21 +5,19 @@ import java.util.Scanner;
 public class exo08 {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
-        System.out.print("Are you ready?:");
+        System.out.print("Etes-vous pret?:");
         boolean ready=sc.nextBoolean();
-        if(ready){
-            System.out.print("is tha cart empty?:");
-            boolean empty=sc.nextBoolean();
-            if(!empty){
-                System.out.println("yes you can now");
-            }
-            else{
-                System.out.println("sorry its empty");
-            }
+        System.out.print("Le panier est-il vide?:");
+        boolean empty=sc.nextBoolean();
+        if(ready && !empty){
+                System.out.println("Je lence la balle ");
         }
-        else
+        else if(!ready)
         {
-            System.out.println("sorry i am not ready");
+            System.out.println("je ne lance pas la balle car vous n'etes pas pret");
+        }
+        else{
+            System.out.println("je ne lance pas la balle car le panier est vide ");
         }
 
 
