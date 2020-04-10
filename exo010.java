@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class exo010 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int id,no1,no2;
-       // float result;
+        int id;
+        float no1,no2;
         System.out.println("Calculatrice: MENU\n");
         System.out.println("1.Addition.");
         System.out.println("2.Soustraction.");
@@ -19,23 +19,23 @@ public class exo010 {
        {
            case 1:
                System.out.print("Rentres le Premier nombre :");
-               no1=sc.nextInt();
+               no1=Float.parseFloat(sc.next());
                System.out.print("Rentres le deuxiem nombre :");
-               no2=sc.nextInt();
+               no2=Float.parseFloat(sc.next());
                System.out.println(no1+" + "+no2+" = "+(no1+no2));
                break;
            case 2:
                System.out.print("Rentres le Premier nombre :");
-               no1=sc.nextInt();
+               no1=Float.parseFloat(sc.next());
                System.out.print("Rentres le deuxiem nombre :");
-               no2=sc.nextInt();
+               no2=Float.parseFloat(sc.next());
                System.out.println(no1+" - "+no2+" = "+(no1-no2));
                break;
            case 3:
                System.out.print("Rentres le Premier nombre :");
-               no1=sc.nextInt();
+               no1=Float.parseFloat(sc.next());
                System.out.print("Rentres le deuxiem nombre :");
-               no2=sc.nextInt();
+               no2=Float.parseFloat(sc.next());
                if(no2 !=0)
                     System.out.println(no1+" / "+no2+" = "+(no1/no2));
                else
@@ -43,16 +43,16 @@ public class exo010 {
                break;
            case 4:
                System.out.print("Rentres le Premier nombre :");
-               no1=sc.nextInt();
+               no1=Float.parseFloat(sc.next());
                System.out.print("Rentres le deuxiem nombre :");
-               no2=sc.nextInt();
+               no2=Float.parseFloat(sc.next());
                System.out.println(no1+" * "+no2+" = "+(no1*no2));
                break;
            case 5:
                System.out.print("Rentres le Premier nombre :");
-               no1=sc.nextInt();
+               no1=Float.parseFloat(sc.next());
                System.out.print("Rentres le deuxiem nombre :");
-               no2=sc.nextInt();
+               no2=Float.parseFloat(sc.next());
                System.out.println(no1+" ^ "+no2+" = "+(Math.pow(no1,no2)));
                break;
            default:
