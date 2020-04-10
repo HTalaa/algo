@@ -12,10 +12,15 @@ public class exo08 {
         if(ready && !empty){
                 System.out.println("Je lence la balle ");
         }
+        else if(!ready && empty)
+        {
+            System.out.println("je ne lance pas la balle car vous n'etes pas pret et le panier est vide");
+        }
         else if(!ready)
         {
             System.out.println("je ne lance pas la balle car vous n'etes pas pret");
         }
+
         else{
             System.out.println("je ne lance pas la balle car le panier est vide ");
         }
