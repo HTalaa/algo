@@ -6,7 +6,7 @@ public class exo09 {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         int coca=3,eau=0;
-        out:
+
         System.out.println("Il  reste  "+coca+" coca et "+eau+" eau dans le distributeur");
         System.out.println("Choisessez une boisson : tapez :\n 1 : coca \n 2 : eau");
         int choix=sc.nextInt();
