@@ -11,7 +11,7 @@ public class exo14 {
         System.out.print("Entrez le nombre de balles dans le panier  : ");
         stockBalles=sc.nextInt();
 
-        while (stockBalles!=0)
+        while (stockBalles>0)
         {
             System.out.println("Etes-vous prêt ? ");
             boolean pret = sc.nextBoolean();
