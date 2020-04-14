@@ -52,7 +52,7 @@ public class exo12 {
         h3=sDiff%86400/3600;
         m3=sDiff%3600/60;
         s3=sDiff%60;
-        System.out.printf(" La différence entre ces 2 durées est de :\n %dj, %dh, %dm, %ds",j3,h3,m3,s3);
+        System.out.printf(" La différence entre ces 2 durées est de :\n %dj, %dh, %dm, %ds",Math.abs(j3),Math.abs(h3),Math.abs(m3),Math.abs(s3));
         // 1j, 1h, 1m, 1s
         // ===========FIN==============
 
