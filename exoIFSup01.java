@@ -17,6 +17,7 @@ public class exoIFSup01 {
         m=sc.nextInt();
         // 59
         // Dans 1 min, il sera : 2h00
+        m+=1;
         if(m==60){
             m=0;
             h+=1;
@@ -24,6 +25,7 @@ public class exoIFSup01 {
         if(h==24){
             h=0;
         }
+        System.out.printf("Dans 1 min, il sera : %dh%d",h,m);
         // =================
     }
 }
