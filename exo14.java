@@ -5,15 +5,16 @@ import java.util.Scanner;
 public class exo14 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int stockBalles=3;
+        int stockBalles;
+        // Entrez le nombre de balles dans le panier  :
+        // 2
+        System.out.print("Entrez le nombre de balles dans le panier  : ");
+        stockBalles=sc.nextInt();
 
-
-
-        //boolean panierVide = Boolean.parseBoolean(sc.nextLine());
         while (stockBalles!=0)
         {
             System.out.println("Etes-vous prêt ? ");
-            boolean pret = Boolean.parseBoolean(sc.nextLine());
+            boolean pret = sc.nextBoolean();
             if(pret )
             {
                 System.out.println("Je lance la balle");
@@ -21,11 +22,11 @@ public class exo14 {
             }
             else
             {
-                System.out.println("Je ne lance pas la balle car vous n'êtes pas prêt");
+                System.out.println("Je ne lance pas la balle ");
             }
 
         }
-        System.out.println("Je ne lance pas la balle car le panier est vide");
+        System.out.println("Partie terminée");
 
     }
 }
