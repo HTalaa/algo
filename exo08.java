@@ -4,27 +4,29 @@ import java.util.Scanner;
 
 public class exo08 {
     public static void main(String[] args) {
-        Scanner sc =new Scanner(System.in);
-        System.out.print("Etes-vous pret?:");
-        boolean ready=sc.nextBoolean();
-        System.out.print("Le panier est-il vide?:");
-        boolean empty=sc.nextBoolean();
-        if(ready && !empty){
-                System.out.println("Je lence la balle ");
-        }
-        else if(!ready && empty)
-        {
-            System.out.println("je ne lance pas la balle car vous n'etes pas pret et le panier est vide");
-        }
-        else if(!ready)
-        {
-            System.out.println("je ne lance pas la balle car vous n'etes pas pret");
-        }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Etes-vous prêt ? ");
+        boolean pret = Boolean.parseBoolean(sc.nextLine());
 
-        else{
-            System.out.println("je ne lance pas la balle car le panier est vide ");
-        }
+        System.out.println("Le panier est-il vide ?");
+        boolean panierVide = Boolean.parseBoolean(sc.nextLine());
 
+        if(pret && !panierVide)
+        {
+            System.out.println("Je lance la balle");
+        }
+        else
+        {
+            System.out.println("Je ne lance pas la balle car");
+            if(panierVide)
+            {
+                System.out.println("le panier est vide");
+            }
+            if(!pret)
+            {
+                System.out.println("vous n'êtes pas prêt");
+            }
+        }
 
     }
 }
