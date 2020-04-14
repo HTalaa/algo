@@ -7,46 +7,25 @@ public class exo11 {
         Scanner sc=new Scanner(System.in);
         System.out.print("Enterz la note: ");
         float x=Float.parseFloat(sc.next());
-        int note=(int)x;
-        switch (note){
-            case 0:
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-            case 5:
-            case 6:
-            case 7:
-            case 8:
-            case 9:
-            case 10:
-                System.out.println("I");
-                break;
-            case 11:
-            case 12:
-                System.out.println("S");
-                break;
-            case 13:
-            case 14:
-            case 15:
-                System.out.println("B");
-                break;
-            case 16:
-            case 17:
-            case 18:
-                System.out.println("TB");
-                break;
-            case 19:
-            case 20:
-                System.out.println("Excellent");
-                break;
-            default:
-                System.out.println("PAS Valid");
-                break;
-
-
-
-
+        if ( x>=0 && x <11)
+        {
+            System.out.println("I");
+        }
+        else if( x>=11 && x <13){
+            System.out.println("S");
+        }
+        else if( x>=13 && x <16){
+            System.out.println("B");
+        }
+        else if( x>=16 && x <19){
+            System.out.println("TB");
+        }
+        else if( x>=19 && x <=20){
+            System.out.println("Excellent");
+        }
+        else
+        {
+            System.out.println("PAS Valid");
         }
 
     }
