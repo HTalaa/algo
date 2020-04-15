@@ -63,8 +63,17 @@ public class exo17 {
 
             }
             System.out.println("Il reste "+stockCoca+" coca et "+stockEau+" eau dans le distributeur");
-            System.out.println("Désirez-vous une autre boisson ? ");
-            encore=sc.nextBoolean();
+
+
+            if(stockCoca>0 || stockEau>0){
+                System.out.println("Désirez-vous une autre boisson ? ");
+                encore=sc.nextBoolean();
+            }
+            else{
+                encore=false;
+                System.out.println("le distributeur est vide");
+            }
+
         }while(encore);
         System.out.println(" Merci et au revoir");
     }
