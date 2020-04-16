@@ -61,7 +61,8 @@ public class justePrix {
                 System.out.printf("veuillez saisir un nombre entre 1 et %d :",lim-1);
                 proposition = Integer.parseInt(sc.nextLine());
             }
-            if(proposition!=0) {
+
+            if(proposition>1 && proposition<lim) {
 
                 if (proposition < justePrix) {
                     System.out.println("***********\nC'est plus\n*************");
