@@ -7,13 +7,14 @@ public class exoSup03 {
         Scanner sc=new Scanner(System.in);
         int i=0;
         int min=0;
-        System.out.printf("Entrez le nombre %d :",i+1);
-        int x=sc.nextInt();
-        min=x;
-        ++i;
+
+
         do{
             System.out.printf("Entrez le nombre %d :",i+1);
-            x=sc.nextInt();
+            int x=sc.nextInt();
+            if(i==0){
+                min=x;
+            }
             if(x<min){
                 min=x;
             }
