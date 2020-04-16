@@ -48,14 +48,19 @@ public class justePrix {
         int proposition=0;
         int tent=0,tent1=10;
 
-        int justePrix = r.nextInt(lim);
+        int justePrix = r.nextInt(lim-2)+1;
         System.out.println("Le juste prix est : "+justePrix);
         System.out.println("--------------------------------------");
 
         do{
             System.out.printf("  Il vous reste %d essais\n",tent1);
             System.out.println("Vous pensez à  :");
-            proposition = Integer.parseInt(sc.nextLine());
+            try {
+                proposition = Integer.parseInt(sc.nextLine());
+            }catch(NumberFormatException e){
+                System.out.printf("veuillez saisir un nombre entre 1 et %d :",lim-1);
+                proposition = Integer.parseInt(sc.nextLine());
+            }
             if(proposition!=0) {
 
                 if (proposition < justePrix) {
