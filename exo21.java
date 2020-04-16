@@ -28,12 +28,7 @@ public class exo21 {
             System.out.println("Entrez le proposition :");
             proposition = Integer.parseInt(sc.nextLine());
 
-            if(justePrix == proposition)
-            {
-                System.out.println("C'est gagné");
-            }
-            else
-            {
+
                 if (proposition < justePrix)
                 {
                     System.out.println("C'est plus");
@@ -43,7 +38,7 @@ public class exo21 {
                     System.out.println("C'est moins");
                 }
 
-            }
+
             ++tent;
         }while(justePrix!=proposition);
         System.out.printf("C'est gagné en %d tentatives",tent);
