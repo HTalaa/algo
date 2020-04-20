@@ -62,11 +62,11 @@ public class justePrix {
                 proposition = Integer.parseInt(sc.nextLine());
             }
 
-            if(proposition>1 && proposition<lim) {
+            if(proposition>=1 && proposition<lim) {
 
                 if (proposition < justePrix) {
                     System.out.println("***********\nC'est plus\n*************");
-                } else {
+                } else if(proposition > justePrix) {
                     System.out.println("***********\nC'est moins\n**************");
                 }
 
