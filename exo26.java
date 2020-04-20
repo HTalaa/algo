@@ -20,6 +20,5 @@ public class exo26 {
             System.out.println(t);
         }
 
-
     }
 }
