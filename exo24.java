@@ -9,7 +9,7 @@ public class exo24 {
         try {
             System.out.println("Entrez le nombre de joueurs entre 1 et 10");
             int no=sc.nextInt();
-            if(no <=0 && no >10){
+            if(no <1 || no >10){
                 System.out.println("le nombre n'est pas entre 1 et 10");
             }
             else{
