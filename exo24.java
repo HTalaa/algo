@@ -11,8 +11,11 @@ public class exo24 {
         int no=sc.nextInt();
 
         if(no <0 && no >10){
-
+            System.out.println("le nombre n'est pas entre 1 et 10");
         }
-        tab=new double[no];
+        else{
+            tab=new double[no];
+        }
+
     }
 }

@@ -81,11 +81,11 @@ public class justePrix {
             System.out.println("C'est perdue >> la reponse etait "+justePrix+" :-)\n voulez-vous rejouer? true /false");
         }
         else{
-            System.out.println("C'est gagné :-)");
+            System.out.println("C'est gagné :-)\n voulez-vous rejouer? true /false");
         }
         String x;
       //  do{
-            System.out.println(" voulez-vous rejouer? true /false");
+          //  System.out.println(" voulez-vous rejouer? true /false");
              x=sc.nextLine();
         //    System.out.println(isBoolean(x));
       //  }while (isBoolean(x));*/
