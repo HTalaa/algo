@@ -4,6 +4,17 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class justePrix {
+
+    public static boolean estEntier (String chaine){
+        try{
+            Integer.parseInt(chaine);
+        } catch (NumberFormatException e)
+        {
+            return false;
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         boolean ret=false;
