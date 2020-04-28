@@ -40,6 +40,14 @@ public class Pendu {
                         System.out.println("Votre Proposition " + (nbEssai + 1) + " : ");
                         Scanner lettre = new Scanner(System.in);
                         lettreTapee = lettre.nextLine();
+                        if(estEntier(lettreTapee)){
+                            System.out.println("\u001B[35m Ce n'est pas une lettre !! \u001B[0m");
+                        }
+
+                        if(lettreDejaSaisie.contains(lettreTapee)){
+                            System.out.println("\u001B[35m Vous l'avez déja proposée  !!\u001B[0m");
+                        }
+
                     } while (lettreTapee.length() == 0 || estEntier(lettreTapee) || lettreDejaSaisie.contains(lettreTapee));
 
                     char lettreSeule = lettreTapee.charAt(0);
@@ -142,6 +150,13 @@ public class Pendu {
                         System.out.println("Votre Proposition " + (nbEssai + 1) + " : ");
                         Scanner lettre = new Scanner(System.in);
                         lettreTapee = lettre.nextLine();
+                        if(estEntier(lettreTapee)){
+                            System.out.println("\u001B[35m Ce n'est pas une lettre !! \u001B[0m");
+                        }
+
+                        if(lettreDejaSaisie.contains(lettreTapee)){
+                            System.out.println("\u001B[35m Vous l'avez déja proposée  !!\u001B[0m");
+                        }
                     } while (lettreTapee.length() == 0 || estEntier(lettreTapee) || lettreDejaSaisie.contains(lettreTapee));
 
                     char lettreSeule = lettreTapee.charAt(0);
@@ -244,6 +259,13 @@ public class Pendu {
                         System.out.println("Votre Proposition " + (nbEssai + 1) + " : ");
                         Scanner lettre = new Scanner(System.in);
                         lettreTapee = lettre.nextLine();
+                        if(estEntier(lettreTapee)){
+                            System.out.println("\u001B[35m Ce n'est pas une lettre !! \u001B[0m");
+                        }
+
+                        if(lettreDejaSaisie.contains(lettreTapee)){
+                            System.out.println("\u001B[35m Vous l'avez déja proposée  !!\u001B[0m");
+                        }
                     } while (lettreTapee.length() == 0 || estEntier(lettreTapee) || lettreDejaSaisie.contains(lettreTapee));
 
                     char lettreSeule = lettreTapee.charAt(0);
