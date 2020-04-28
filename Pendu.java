@@ -3,6 +3,7 @@ package algo;
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class Pendu {
     public static void main(String[] args) {
         String tabFacile[] = {"chien", "pizza", "porte", "maison"};
@@ -19,7 +20,8 @@ public class Pendu {
         char niveau=choix(f,m,d);
         if(niveau=='1') {
             try {
-                mot = tabFacile[f];
+                int r=new Random().nextInt(tabFacile.length);
+                mot = tabFacile[r];
                 int lg_mot = mot.length();
                 String affichage = "";
                 affichage = Init(mot);
@@ -114,6 +116,8 @@ public class Pendu {
                     System.out.println("");
                     System.out.println("*****************************************************************");
                     ++f;
+                    tabFacile=removeElement(tabFacile,r);
+
                 } else {
                     System.out.println("*****************************************************************");
                     System.out.println("");
@@ -129,7 +133,8 @@ public class Pendu {
         else if(niveau=='2')
         {
             try {
-                mot = tabMoyen[m];
+                int r=new Random().nextInt(tabMoyen.length);
+                mot = tabMoyen[r];
                 int lg_mot = mot.length();
                 String affichage = "";
                 affichage = Init(mot);
@@ -223,6 +228,7 @@ public class Pendu {
                     System.out.println("");
                     System.out.println("*****************************************************************");
                     ++m;
+                    tabMoyen=removeElement(tabMoyen,r);
                 } else {
                     System.out.println("*****************************************************************");
                     System.out.println("");
@@ -238,7 +244,8 @@ public class Pendu {
         else if(niveau=='3')
         {
             try {
-                mot = tabDifficile[d];
+                int r=new Random().nextInt(tabDifficile.length);
+                mot = tabDifficile[r];
                 int lg_mot = mot.length();
                 String affichage = "";
                 affichage = Init(mot);
@@ -332,6 +339,7 @@ public class Pendu {
                     System.out.println("");
                     System.out.println("*****************************************************************");
                     ++d;
+                    tabDifficile=removeElement(tabDifficile,r);
                 } else {
                     System.out.println("*****************************************************************");
                     System.out.println("");
@@ -351,6 +359,7 @@ public class Pendu {
         }while(envie);
     }
     public static char choix(int f,int m,int d){
+        int n=0;
         String f1="oooo";
         String m1="oooo";
         String d1="oooo";
@@ -365,6 +374,7 @@ public class Pendu {
         }
         else if(f==4){
             f1="****";
+            ++n;
         }
         if(m==1){
             m1="*ooo";
@@ -377,6 +387,7 @@ public class Pendu {
         }
         else if(m==4){
             m1="****";
+            ++n;
         }
 
         if(d==1){
@@ -390,12 +401,13 @@ public class Pendu {
         }
         else if(d==4){
             d1="****";
+            ++n;
         }
         Scanner sc=new Scanner(System.in);
         System.out.println("|-------------------------------------------------------------------------------------------------------|");
         System.out.println("| Le Pendu :");
         System.out.println("|-------------------------------------------------------------------------------------------------------|");
-        System.out.println("  Vous avez réussi 0 niveaux");
+        System.out.println("  Vous avez réussi "+n+" niveaux");
         System.out.println("|-------------------------------------------------------------------------------------------------------|");
         System.out.println("Choisissez le niveau :");
         System.out.println("\u001B[36m"+"1 =  niveau facile       : 5 à 6    letres   "+f1+"\u001B[0m");
@@ -572,5 +584,16 @@ public class Pendu {
             return false;
         }
         return true;
+    }
+
+    public static String[] removeElement( String [] arr, int index ){
+        // Destination array
+        String[] arrOut = new String[arr.length - 1];
+        int remainingElements = arr.length - ( index + 1 );
+        // copying elements that come before the index that has to be removed
+        System.arraycopy(arr, 0, arrOut, 0, index);
+        // copying elements that come after the index that has to be removed
+        System.arraycopy(arr, index + 1, arrOut, index, remainingElements);
+        return arrOut;
     }
 }
